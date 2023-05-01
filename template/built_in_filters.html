@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset>
+        <marquee behavior="alternate" direction="left"><h1>built_in_filters</h1></marquee>
+        <h2 style="color: orange;">{{data|upper}}</h2>
+        <h2  style="color: yellow;">{{data|lower}}</h2>
+        <h2  style="color: blue;">{{data|lower|capfirst}}</h2>
+        <h2  style="color: green;">{{data|title}}</h2>
+        <h2  style="color: orange;">{{data|length}}</h2>
+        <h2 style="color: violet;">{{data|truncatewords:'2'}}</h2>
+        <h2 style="color: magenta;">{{data|truncatechars:'2'}}</h2>
+        <h2 style="color: red;">{{data|slice:'2'}}</h2>
+        <h2 style="color: maroon;">{{r|date:'D, M, Y, h:i A'}}</h2>
+        <h2 style="color: purple;"> i have {{d}} laptop{{d|pluralize}}</h2>
+        <h2>this {{d}}mobile{{d|pluralize}}  {{d|pluralize:'is ,are'}} mine</h2>
+    </fieldset>
+    </center>
+</body>
+</html>
